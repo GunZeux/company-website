@@ -14,9 +14,9 @@ with st.form(key="send_message"):
 
     if submit:
         message = f"""\
-        Subject = New {option} from {user_mail}
+Subject: New {option} from {user_mail}
 
-From {user_mail}
+From: {user_mail}
 {raw_text}"""
 
         send_mail(message)
